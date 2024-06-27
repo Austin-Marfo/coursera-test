@@ -1,9 +1,23 @@
- * {
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
- }
+    
+}
+body {
+    background-color: #382a4a;
+    background-image: linear-gradient(35deg,#0b1830fe, rgba(245, 245, 220, 0.1));
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
 h2{
     text-align: center;
     display: inline-flex;
@@ -17,10 +31,10 @@ h2{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: beige;
-    padding: 20px;
-    position:sticky;
+    padding: 20px 100px;
+    position: relative;
 }
 nav ul li{
     list-style: none;
@@ -29,7 +43,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #44434385;
+    color: #444343d6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     padding: 20px;
@@ -41,6 +55,7 @@ nav h2 a{
 }
 nav ul li a:hover{
     color: tomato;
+    border-bottom: 2px solid tomato;
 }
 nav h2 a:hover{
     color: tomato;
@@ -48,14 +63,19 @@ nav h2 a:hover{
 .info{
     
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin:7rem auto 0 auto;
-    width:80%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin:7rem 5rem 5rem 7rem;
+    width: 80vw;
+    height: 50vh;
+    background-image: linear-gradient(25deg,#b275b065, beige);
+    background-color: beige;
+    border-radius:60px;
     
 }
 .info img{
-    width: 40%;
+    width: 33%;
     border-radius: 80px ;
     border: 10px solid tomato;
     
@@ -64,6 +84,7 @@ nav h2 a:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 60px;
     font-size: 70px;
+    color: tomato;
     
 }
 #text{
@@ -71,6 +92,8 @@ nav h2 a:hover{
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    font-weight: bold;
+    padding: 0rem 6rem 0rem 6rem ;
     
 }
 
@@ -78,55 +101,61 @@ nav h2 a:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:20px 10px ;
 }
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0px;
-    margin:10px;
-}
-
-.card1,.card2,.card3{
-    padding: 20px;
-    width: 30%;
-    height: 50vh;
-    border-radius: 20px;
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-
-
-}
-
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    margin: 10px 30px 0px 30px;
-        
+    margin: 10px 30px 0px 30px;      
 }
 
 h3{
     font-size: 32px;
     color: tomato;
     margin-left: 2rem;
+}
+
+.cards {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin: 0px;
 
 }
 
-.card1:hover{
-    background-color: rgb(71, 148, 255);
-    color: beige;
-    transition: 0.5s;
+.card1,.card2,.card3{
+    background-color: beige;
+    border-radius: 50px;
+    width: 33%;
+    height: 70vh;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
-.card2:hover{
-    background-color: rgb(71, 148, 255);
-    color: beige;
-    transition: 0.5s;
+.cards img{
+    width: 650px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+
+
 }
-.card3:hover{
-    background-color: rgb(71, 148, 255);
-    color: beige;
-    transition: 0.5s;
+.pill {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    width: 7.5em;
+    height: 2.5em;
+    cursor: pointer;
+
+}
+
+.pill:hover {
+    background-color: rgb(228, 227, 175);
 }
